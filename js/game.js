@@ -40,7 +40,7 @@ dificuldadeJogo()
 
 let resetarTempo = 30
 
-resetarTempo = setInterval(function () { 
+setInterval(function () { 
     tempo -= 1
     
     if (tempo == 0) {
@@ -48,6 +48,6 @@ resetarTempo = setInterval(function () {
         clearInterval(criarMosquito)
         window.location.href = "vitoria.html"
     } else {
-        dowcument.getElementById('tempoJogo').innerHTML = tempo
+        document.getElementById('tempoJogo').innerHTML = tempo
     }
 }, 1000)
